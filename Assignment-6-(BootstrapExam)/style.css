@@ -1,0 +1,682 @@
+body {
+  font-family: EXO, sans-serif;
+}
+
+:root {
+  --main-color: #7e3fee;
+  --color-red-400: oklch(70.4% 0.191 22.216);
+  --color-red-500: oklch(63.7% 0.237 25.331);
+  --color-amber-400: oklch(82.8% 0.189 84.429);
+  --color-amber-500: oklch(76.9% 0.188 70.08);
+  --color-amber-600: oklch(66.6% 0.179 58.318);
+  --color-yellow-100: oklch(97.3% 0.071 103.193);
+  --color-yellow-600: oklch(68.1% 0.162 75.834);
+  --color-yellow-700: oklch(55.4% 0.135 66.442);
+  --color-green-50: oklch(98.2% 0.018 155.826);
+  --color-green-100: oklch(96.2% 0.044 156.743);
+  --color-green-200: oklch(92.5% 0.084 155.995);
+  --color-green-600: oklch(62.7% 0.194 149.214);
+  --color-green-700: oklch(52.7% 0.154 150.069);
+  --color-indigo-100: oklch(93% 0.034 272.788);
+  --color-indigo-300: oklch(78.5% 0.115 274.713);
+  --color-indigo-500: oklch(58.5% 0.233 277.117);
+  --color-indigo-600: oklch(51.1% 0.262 276.966);
+  --color-indigo-700: oklch(45.7% 0.24 277.023);
+  --color-violet-50: oklch(96.9% 0.016 293.756);
+  --color-violet-100: oklch(94.3% 0.029 294.588);
+  --color-violet-200: oklch(89.4% 0.057 293.283);
+  --color-violet-300: oklch(81.1% 0.111 293.571);
+  --color-violet-400: oklch(70.2% 0.183 293.541);
+  --color-violet-500: oklch(60.6% 0.25 292.717);
+  --color-violet-600: oklch(54.1% 0.281 293.009);
+  --color-violet-700: oklch(49.1% 0.27 292.581);
+  --color-violet-900: oklch(38% 0.189 293.745);
+  --color-purple-50: oklch(97.7% 0.014 308.299);
+  --color-purple-100: oklch(94.6% 0.033 307.174);
+  --color-purple-200: oklch(90.2% 0.063 306.703);
+  --color-purple-300: oklch(82.7% 0.119 306.383);
+  --color-purple-500: oklch(62.7% 0.265 303.9);
+  --color-purple-600: oklch(55.8% 0.288 302.321);
+  --color-purple-700: oklch(49.6% 0.265 301.924);
+  --color-purple-900: oklch(38.1% 0.176 304.987);
+  --color-fuchsia-300: oklch(83.3% 0.145 321.434);
+  --color-fuchsia-400: oklch(74% 0.238 322.16);
+  --color-fuchsia-500: oklch(66.7% 0.295 322.15);
+  --color-pink-600: oklch(59.2% 0.249 0.584);
+  --color-slate-200: oklch(92.9% 0.013 255.508);
+  --color-slate-700: oklch(37.2% 0.044 257.287);
+  --color-slate-800: oklch(27.9% 0.041 260.031);
+  --color-gray-50: oklch(98.5% 0.002 247.839);
+  --color-gray-100: oklch(96.7% 0.003 264.542);
+  --color-gray-200: oklch(92.8% 0.006 264.531);
+  --color-gray-300: oklch(87.2% 0.01 258.338);
+  --color-gray-400: oklch(70.7% 0.022 261.325);
+  --color-gray-500: oklch(55.1% 0.027 264.364);
+  --color-gray-600: oklch(44.6% 0.03 256.802);
+  --color-gray-700: oklch(37.3% 0.034 259.733);
+  --color-gray-800: oklch(27.8% 0.033 256.848);
+  --color-gray-900: oklch(21% 0.034 264.665);
+  --spacing: 0.25rem;
+}
+
+/* padding-block */
+.pblk {
+  padding-block: calc(var(--spacing) * 17);
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-violet-700);
+}
+
+.btn-green {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--color-green-600);
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-green-700);
+}
+
+.btn-yellow {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--color-yellow-600);
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-yellow-700);
+}
+
+.btn-indigo {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--color-indigo-600);
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-indigo-700);
+}
+
+.text-violet {
+  color: var(--color-violet-600);
+}
+
+header .navbar .navbar-nav {
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--main-color);
+}
+
+header .navbar .nav-item .nav-link.active {
+  color: var(--main-color);
+}
+
+header .navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
+header .navbar .nav-item .nav-link.dropdown-toggle::after {
+  border: 0;
+}
+
+header .navbar .nav-link.active::after {
+  width: 100%;
+}
+
+header .navbar .nav-link:not(.active):hover::after {
+  width: 100%;
+}
+
+main h1 {
+  font-size: calc(var(--spacing) * 12);
+}
+
+main h2 {
+  font-size: calc(var(--spacing) * 11);
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--color-violet-600),
+    var(--color-purple-600),
+    var(--color-amber-500)
+  );
+  background-clip: text;
+}
+
+main section span.badge {
+  color: var(--main-color);
+  background-color: var(--color-violet-50);
+  border-color: var(--color-gray-100);
+  font-size: calc(var(--spacing) * 3);
+}
+
+main section span.badge::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -4.5rem;
+  width: 4rem;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--main-color));
+  transform: translateY(-50%);
+}
+
+main section span.badge::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 0.75rem);
+  width: 4rem;
+  height: 2px;
+  background: linear-gradient(to left, transparent, var(--main-color));
+  transform: translateY(-50%);
+}
+
+#Hero-Section {
+  padding-top: calc(var(--spacing) * 40);
+  padding-bottom: calc(var(--spacing) * 20);
+  background-image:
+    linear-gradient(to right, #4d179acc, #59168bcc),
+    url(./Images/hero-bg-img.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Hero-Section .content footer span {
+  color: var(--color-violet-200);
+}
+
+#Properties-Section {
+  background-color: var(--color-gray-100);
+}
+
+#Properties-Section .cards .card .img-container {
+  height: 270px;
+}
+
+#Properties-Section .cards .card .card-img-top {
+  transition-duration: 0.3s;
+}
+
+#Properties-Section .cards .card:hover .card-img-top {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#Properties-Section .cards .card .featured {
+  background: var(--color-violet-600);
+  font-size: 0.85rem;
+}
+
+#Properties-Section .cards .card .listing {
+  background: var(--color-green-600);
+  font-size: 0.85rem;
+}
+
+#Properties-Section .cards .card .price {
+  background: var(--color-amber-600);
+  font-size: 0.85rem;
+}
+
+#Properties-Section .cards .card .react {
+  padding-inline: 0.375rem;
+  padding-block: 0.75rem;
+  transition: 0.2s;
+  cursor: pointer;
+  color: var(--color-gray-600);
+}
+
+#Properties-Section .cards .card .react:hover {
+  color: var(--color-red-500);
+}
+
+#Properties-Section .cards .card .photos-number {
+  font-size: 0.85rem;
+  padding-inline: 0.625rem;
+}
+
+#Properties-Section .cards .card .card-body .top {
+  div {
+    color: var(--main-color);
+  }
+
+  span {
+    font-size: 0.825rem;
+  }
+}
+
+#Properties-Section .cards .card .card-body span {
+  color: var(--color-gray-600);
+  font-size: 0.925rem;
+}
+
+#Properties-Section .cards .card-body .agent-img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#Properties-Section .cards .card .card-body footer span.badge {
+  --bs-badge-padding-x: 0.92rem;
+  --bs-badge-padding-y: 0.775rem;
+  --bs-badge-font-size: 0.85rem;
+  --bs-badge-font-weight: 400;
+  --bs-badge-color: var(--main-color);
+  --bs-badge-border-radius: var(--bs-border-radius);
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+  font-size: var(--bs-badge-font-size);
+  font-weight: var(--bs-badge-font-weight);
+  color: var(--bs-badge-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Properties-Section .cards .card .card-body footer span.badge:hover {
+  background-color: var(--color-violet-200);
+}
+
+#Our-Services-Section .nav.nav-underline {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: 600;
+  --bs-nav-link-color: var(--color-gray-700);
+  --bs-nav-link-hover-color: var(--main-color);
+}
+
+#Our-Services-Section .nav.nav-underline .nav-link.active {
+  font-weight: 700;
+  color: var(--main-color);
+  background: var(--color-violet-100);
+}
+
+#Our-Services-Section .nav.nav-underline .nav-link:not(.active):hover {
+  border-color: var(--color-violet-300);
+}
+
+#Our-Services-Section .services .img-container {
+  height: 23.725rem;
+}
+
+#Our-Services-Section .services .tab-content .info .logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#Our-Services-Section .services #buying-tab-pane .layer,
+#Our-Services-Section .services #renting-tab-pane .layer,
+#Our-Services-Section .services #commercial-tab-pane .layer {
+  top: 19rem;
+  left: -1.25rem;
+}
+
+#Our-Services-Section .services #buying-tab-pane .logo,
+#Our-Services-Section .services #renting-tab-pane .logo {
+  background: var(--color-violet-100);
+}
+
+#Our-Services-Section .services #buying-tab-pane .layer p,
+#Our-Services-Section .services #renting-tab-pane .layer p {
+  color: var(--main-color);
+}
+
+#Our-Services-Section .services #selling-tab-pane .logo {
+  background: var(--color-green-100);
+}
+
+#Our-Services-Section .services #selling-tab-pane .layer p {
+  color: var(--color-green-600);
+}
+
+#Our-Services-Section .services #selling-tab-pane .layer,
+#Our-Services-Section .services #investing-tab-pane .layer {
+  top: 19rem;
+  right: -1.25rem;
+}
+
+#Our-Services-Section .services #investing-tab-pane .logo {
+  background: var(--color-yellow-100);
+}
+
+#Our-Services-Section .services #investing-tab-pane .layer p {
+  color: var(--color-amber-600);
+}
+
+#Our-Services-Section .services #commercial-tab-pane .logo {
+  background-color: var(--color-indigo-100);
+}
+
+#Our-Services-Section .services #commercial-tab-pane .layer p {
+  color: var(--color-indigo-600);
+}
+
+#Reviews-Section {
+  background: linear-gradient(var(--color-violet-900), var(--color-purple-900));
+}
+
+#Reviews-Section span.badge::before {
+  background: linear-gradient(to right, transparent, var(--color-amber-600));
+}
+
+#Reviews-Section span.badge::after {
+  background: linear-gradient(to left, transparent, var(--color-amber-600));
+}
+#Reviews-Section .carousel .carousel-item {
+    transition: transform 0.3s ease-in-out;
+}
+#Reviews-Section .text-center p {
+  color: var(--color-gray-200);
+}
+#Reviews-Section .carousel .carousel-inner .carousel-card {
+  min-height: 420px;
+}
+
+#Reviews-Section .carousel-indicators [data-bs-target] {
+  width: 14px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  transition: 0.3s;
+}
+
+#Reviews-Section .carousel-indicators .active {
+  background-color: var(--color-slate-200);
+}
+
+#Reviews-Section .carousel .carousel-inner .img-container {
+  width: 4rem;
+  height: 4rem;
+}
+
+#Reviews-Section .carousel .carousel-inner .person .person-info .info {
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+#Help-Center-Section {
+  background-color: var(--color-gray-100);
+}
+
+#Help-Center-Section .text-center h2 {
+  color: var(--main-color);
+}
+
+#Help-Center-Section .accordion .accordion-header button {
+  background-color: white;
+  transition: 0.3s;
+}
+
+#Help-Center-Section .accordion .accordion-header:hover button {
+  background-color: var(--color-gray-100);
+}
+
+#Contact-Us-Section::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: -120px;
+  right: -120px;
+  background: var(--color-violet-100);
+  z-index: -2;
+}
+
+#Contact-Us-Section::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  bottom: -120px;
+  left: -120px;
+  background: var(--color-violet-100);
+  z-index: -2;
+}
+
+#Contact-Us-Section div.container::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  top: -20px;
+  right: -20px;
+  border: 4px var(--color-violet-200) solid;
+  z-index: -1;
+}
+
+#Contact-Us-Section div.container::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  bottom: 70px;
+  left: 40px;
+  border: 4px var(--color-violet-200) solid;
+  z-index: -1;
+}
+
+#Contact-Us-Section .card .logo {
+  width: 4rem;
+  height: 4rem;
+  transition: 0.3s;
+}
+
+#Contact-Us-Section .card {
+  border-color: var(--color-gray-200);
+  transition: 0.2s;
+}
+
+#Contact-Us-Section .card:hover {
+  translate: 0 -3%;
+}
+
+#Contact-Us-Section .card:hover .logo {
+  scale: 1.15;
+}
+
+#Contact-Us-Section .card h5 {
+  font-size: 1.2rem;
+}
+
+#Contact-Us-Section .card p {
+  font-size: 0.9rem;
+}
+
+#Contact-Us-Section .card.violet:hover {
+  border-color: var(--color-violet-600);
+}
+
+#Contact-Us-Section .card.violet a {
+  color: var(--color-violet-600);
+}
+
+#Contact-Us-Section .card.purple:hover {
+  border-color: var(--color-purple-600);
+}
+
+#Contact-Us-Section .card.purple a {
+  color: var(--color-purple-600);
+}
+
+#Contact-Us-Section .card.amber:hover {
+  border-color: var(--color-pink-600);
+}
+
+#Contact-Us-Section .card.amber span {
+  color: var(--color-pink-600);
+}
+
+#Contact-Us-Section .card.indigo:hover {
+  border-color: var(--color-indigo-600);
+}
+
+#Contact-Us-Section .card.indigo a {
+  color: var(--color-indigo-600);
+}
+
+#Contact-Us-Section .card.violet .logo {
+  background: var(--color-violet-600);
+}
+
+#Contact-Us-Section .card.purple .logo {
+  background: var(--color-purple-600);
+}
+
+#Contact-Us-Section .card.amber .logo {
+  background: linear-gradient(
+    135deg,
+    var(--color-fuchsia-500),
+    var(--color-amber-500)
+  );
+}
+
+#Contact-Us-Section .card.indigo .logo {
+  background: var(--color-indigo-600);
+}
+
+#Contact-Us-Section .contact p,
+#Contact-Us-Section .contact a {
+  font-size: 0.9rem;
+}
+
+#Contact-Us-Section .connect {
+  background-color: #7e3fee;
+}
+
+#Contact-Us-Section .connect .logo {
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+#Contact-Us-Section .connect .logo:hover {
+  background: rgba(255, 255, 255, 0.3);
+  scale: 1.1;
+}
+
+#Contact-Us-Section .form-floating .form-control:focus {
+  box-shadow: 0 0 0 0.2rem var(--main-color);
+}
+
+#Contact-Us-Section .form-floating textarea {
+  resize: none;
+  height: 150px;
+}
+
+#Contact-Us-Section .form-floating .form-check-input:checked {
+  background-color: var(--main-color);
+}
+
+#Contact-Us-Section .form-floating div:has(> input[type="checkbox"]) {
+  background: var(--color-violet-100);
+}
+
+#Contact-Us-Section .form-floating button {
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+#Contact-Us-Section .form-floating button:hover {
+  translate: 0px -4px;
+}
+
+#Foot-Section {
+  background: linear-gradient(var(--color-violet-900), var(--color-purple-900));
+}
+
+#Foot-Section .social a {
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+#Foot-Section .social a:hover {
+  background: var(--color-violet-700);
+  scale: 1.15;
+}
+
+@media screen and (min-width: 576px) {
+  #Reviews-Section .carousel .carousel-inner .carousel-card {
+    min-height: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #Hero-Section {
+    padding-top: calc(var(--spacing) * 30);
+  }
+
+  #Hero-Section .content .search-form {
+    width: 90% !important;
+  }
+
+  #Reviews-Section .carousel .carousel-inner .carousel-card {
+    min-height: 390px;
+  }
+
+  #Reviews-Section .carousel .carousel-item {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .w-lg-70 {
+    width: 70%;
+  }
+
+  .w-65 {
+    width: 65%;
+  }
+
+  main h2 {
+    font-size: calc(var(--spacing) * 12);
+  }
+
+  #Hero-Section {
+    padding-bottom: 0;
+  }
+
+  #Hero-Section .content h1 {
+    font-size: calc(var(--spacing) * 15);
+  }
+
+  #Hero-Section .content .search-form {
+    width: 65% !important;
+  }
+
+  #Properties-Section .cards .inner {
+    width: calc(100% / 3) !important;
+    height: 500px;
+  }
+
+  #Our-Services-Section .services .tab-pane > .row {
+    justify-content: center;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #Hero-Section {
+    padding-top: calc(var(--spacing) * 22);
+  }
+
+  #Reviews-Section .carousel .carousel-inner .carousel-card {
+    min-height: 280px;
+  }
+}
