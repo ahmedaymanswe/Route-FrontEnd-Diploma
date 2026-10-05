@@ -378,7 +378,7 @@ main section span.badge::after {
   color: var(--color-gray-200);
 }
 #Reviews-Section .carousel .carousel-inner .carousel-card {
-  min-height: 420px;
+  height: 460px;
 }
 
 #Reviews-Section .carousel-indicators [data-bs-target] {
@@ -613,7 +613,7 @@ main section span.badge::after {
 
 @media screen and (min-width: 576px) {
   #Reviews-Section .carousel .carousel-inner .carousel-card {
-    min-height: 360px;
+    max-height: 360px;
   }
 }
 
@@ -627,7 +627,7 @@ main section span.badge::after {
   }
 
   #Reviews-Section .carousel .carousel-inner .carousel-card {
-    min-height: 390px;
+    max-height: 390px;
   }
 
   #Reviews-Section .carousel .carousel-item {
@@ -677,6 +677,6 @@ main section span.badge::after {
   }
 
   #Reviews-Section .carousel .carousel-inner .carousel-card {
-    min-height: 280px;
+    max-height: 350px;
   }
 }
